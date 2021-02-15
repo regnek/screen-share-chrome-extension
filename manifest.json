@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Vofspace Screen Sharing",
+    "version": "0.10",
+    "background": {
+        "scripts": [
+            "extension.js"
+        ]
+    },
+    "externally_connectable": {
+        "matches": [
+            "*://localhost/*",
+            "*://vofspace.test/*",
+            "*://*.vofspace.com/*"
+        ]
+    },
+    "permissions": [
+        "desktopCapture",
+        "tabs"
+    ]
+}
